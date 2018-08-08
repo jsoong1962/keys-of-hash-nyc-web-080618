@@ -2,8 +2,12 @@ require 'pry'
 
 class Hash
   def keys_of(*arguments)
-    argument
+    array = []
+    self.each do |animal, place|
+      if arguments.include?(place)
+        array << animal
+      end
   end
+  array
 end
 
-hash.keys_of(a)
