@@ -7,6 +7,7 @@ class Hash
       if arguments.include?(place)
         array << animal
       end
+    end
   end
   array
 end
